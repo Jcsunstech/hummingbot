@@ -1,10 +1,10 @@
 # A single source of truth for constant variables related to the exchange
 class Constants:
     EXCHANGE_NAME = "hitbtc"
-    REST_URL = "https://api.hitbtc.com/api/2"
-    REST_URL_AUTH = "/api/2"
-    WS_PRIVATE_URL = "wss://api.hitbtc.com/api/2/ws/trading"
-    WS_PUBLIC_URL = "wss://api.hitbtc.com/api/2/ws/public"
+    REST_URL = "https://api.p2pb2b.com"
+    REST_URL_AUTH = "/api/v2"
+    WS_PRIVATE_URL = "wss://apiws.p2pb2b.com/"
+    WS_PUBLIC_URL = "wss://apiws.p2pb2b.com/"
 
     HBOT_BROKER_ID = "refzzz48"
 
@@ -12,13 +12,13 @@ class Constants:
         # Public Endpoints
         "TICKER": "public/ticker",
         "TICKER_SINGLE": "public/ticker/{trading_pair}",
-        "SYMBOL": "public/symbol",
-        "ORDER_BOOK": "public/orderbook",
-        "ORDER_CREATE": "order",
-        "ORDER_DELETE": "order/{id}",
-        "ORDER_STATUS": "order/{id}",
-        "USER_ORDERS": "order",
-        "USER_BALANCES": "trading/balance",
+        "SYMBOL": "public/markets",
+        "ORDER_BOOK": "public/book",
+        "ORDER_CREATE": "order/new",
+        "ORDER_DELETE": "order/cancel/{id}",
+        "ORDER_STATUS": "account/order/{id}",
+        "USER_ORDERS": "account/order",
+        "USER_BALANCES": "account/balances",
     }
 
     WS_SUB = {
