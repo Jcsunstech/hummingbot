@@ -1,7 +1,7 @@
 # A single source of truth for constant variables related to the exchange
 class Constants:
     EXCHANGE_NAME = "hitbtc"
-    REST_URL = "https://api.p2pb2b.com/api/v2/"
+    REST_URL = "https://api.p2pb2b.com/api/v2"
     REST_URL_AUTH = "/api/v2"
     WS_PRIVATE_URL = "wss://apiws.p2pb2b.com/"
     WS_PUBLIC_URL = "wss://apiws.p2pb2b.com/"
